@@ -186,7 +186,11 @@
     </PropertyGroup>
     <PropertyGroup Condition="'$(Cfg_2_Win64)'!=''">
         <AppDPIAwarenessMode>PerMonitorV2</AppDPIAwarenessMode>
-        <LinkPackageImports>rtl.bpi;fmx.bpi;IndySystem.bpi;IndyCore.bpi</LinkPackageImports>
+        <UsePackages>false</UsePackages>
+        <DynamicRTL>false</DynamicRTL>
+        <VerInfo_IncludeVerInfo>true</VerInfo_IncludeVerInfo>
+        <LinkPackageStatics>rtl.lib;fmx.lib;IndySystem.lib;IndyCore.lib</LinkPackageStatics>
+        <VerInfo_Locale>1033</VerInfo_Locale>
     </PropertyGroup>
     <ItemGroup>
         <CppCompile Include="bootp.cpp">

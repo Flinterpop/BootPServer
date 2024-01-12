@@ -1,7 +1,7 @@
 object BootPProxy: TBootPProxy
   Left = 0
   Top = 0
-  Caption = 'BootP Proxy 10 Jan 2024'
+  Caption = 'BootP Proxy 11 Jan 2024'
   ClientHeight = 462
   ClientWidth = 798
   FormFactor.Width = 320
@@ -56,6 +56,29 @@ object BootPProxy: TBootPProxy
     Text = '24.1.1.7'
     Position.X = 192.000000000000000000
     Position.Y = 395.000000000000000000
+    object TE_Gateway: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      TabOrder = 6
+      Text = '24.1.1.1'
+      Position.Y = 32.000000000000000000
+    end
+  end
+  object Label1: TLabel
+    Position.X = 143.000000000000000000
+    Position.Y = 400.000000000000000000
+    Size.Width = 41.000000000000000000
+    Size.Height = 17.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'IP'
+    TabOrder = 10
+    object Label2: TLabel
+      Position.Y = 32.000000000000000000
+      Size.Width = 41.000000000000000000
+      Size.Height = 17.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'GW'
+      TabOrder = 9
+    end
   end
   object IdUDPClient1: TIdUDPClient
     Host = '255.255.255.255'
